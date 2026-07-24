@@ -6,7 +6,7 @@ window.onload = function () {
         }
     }, 5000);
 };
-const text = "CSE Student | Web Developer | Front-End Learner";
+const text = "";
 let i = 0;
 
 function typeWriter() {
@@ -30,4 +30,17 @@ themeBtn.onclick = function () {
         themeBtn.innerText = "🌙 Dark Mode";
     }
 };
+
+const text="HTML | CSS | JavaScript | Front-End Developer";
+let i=0;
+
+function type(){
+    if(i<text.length){
+        document.getElementById("typing").innerHTML+=text.charAt(i);
+        i++;
+        setTimeout(type,80);
+    }
+}
+document.getElementById("typing").innerHTML="";
+type();
 

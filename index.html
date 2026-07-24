@@ -85,9 +85,15 @@ background:#1f2937;
 </head>
 <body>
 <div id="intro">
-  <h1>🤖 Welcome</h1>
-  <h2>Akash Vishwakarma</h2>
+  <h1 class="welcome-text">✨ Welcome</h1>
+  <h2 class="loader-name">Akash Yashram Vishwakarma</h2>
   <p>Loading Portfolio...</p>
+  <div class="loader-bar">
+    <span></span>
+</div>
+<div class="loader-bar">
+    <span></span>
+</div>
 </div>
 
 <nav>
@@ -102,7 +108,9 @@ background:#1f2937;
 
 <img src="akash.jpg" class="profile">
 
-<h1>Akash Vishwakarma</h1>
+<h1>👋 Hi, I'm <span>Akash Yashram Vishwakarma</span></h1>
+
+<p class="hero-subtitle">🎓 3rd Semester CSE Student UP Polytechnic <span>|</span> 💻 Front-End Web Developer</p>
 
 <p id="typing"></p>
 
@@ -111,43 +119,75 @@ background:#1f2937;
     <a href="resume.pdf" download class="btn">📄 Download Resume</a>
 </div>
 
+<div class="floating left">
+    <div class="box">💻 Front-End Developer</div>
+    <div class="box">🌐 HTML & CSS</div>
+    <div class="box">⚡ JavaScript</div>
+    <div class="box">📱 Responsive Design</div>
+    <div class="box">🚀 Fast Learner</div>
+</div>
+
+<div class="floating right">
+    <div class="box">🎯 Goal: Full-Stack Developer</div>
+    <div class="box">🎓 3rd Semester CSE</div>
+    <div class="box">💡 Creative Thinker</div>
+    <div class="box">📚 Daily Learner</div>
+    <div class="box">💪 Hard Work & Consistency</div>
+</div>
+
 </header>
+
+<div class="bg-circle circle1"></div>
+<div class="bg-circle circle2"></div>
+<div class="bg-circle circle3"></div>
 
 <section>
 
 <div class="card" id="about">
 
-<h2>About Me</h2>
+<h2>👨‍💻About Me</h2>
 
-<p>
-Hello! My name is <b>Akash Vishwakarma</b>. I am a
-<b>CSE 2nd Semester Student</b> in UP Polytechnic.
-Currently I am learning HTML, CSS and JavaScript and
-want to become a professional Web Developer.
-</p>
+<div class="about-box">
+
+
+    <p>👋 Hello, I'm <span>Akash Yashram Vishwakarma</span>.</p>
+
+    <p>🎓 I am a 3rd Semester CSE Student at UP Polytechnic.</p>
+
+    <p>💻 I love creating modern and responsive websites.</p>
+
+    <p>🌐 Currently learning HTML, CSS & JavaScript.</p>
+
+    <p>🚀 My dream is to become a Full-Stack Web Developer.</p>
+
+    <p>📚 Every day I learn new skills and build projects.</p>
+
+    <p>💙 I believe in Hard Work, Consistency and Creativity.</p>
+
+</div>
 
 </div>
 
 <div class="card" id="skills">
 
-<h2>Skills</h2>
+<h2 class="skills-heading">🚀 My Skills</h2>
 
 <div class="skill">
-    <p>HTML</p>
+    <p>🌐 HTML</p>
     <div class="progress">
         <div class="html"></div>
     </div>
 </div>
 
 <div class="skill">
-    <p>CSS</p>
+    <p>🎨 CSS</p>
     <div class="progress">
         <div class="css"></div>
     </div>
 </div>
 
 <div class="skill">
-    <p>JavaScript</p>
+    <p>⚡ JavaScript</p>
     <div class="progress">
         <div class="javascript"></div>
     </div>
@@ -157,20 +197,31 @@ want to become a professional Web Developer.
 
 <div class="card inspiration">
 
-<h2>My Inspiration ❤️</h2>
+    <h2>💖My Inspiration</h2>
 
-<img src="papa.jpg">
+<div class="inspiration-photo">
+    <img src="papa.jpg" class="inspiration-img">
+</div>
 
-<p>
-My father is my biggest inspiration.
-His hard work and dedication motivate me every day.
+<p class="inspiration-text">
+🌟 My biggest inspiration is my father.<br><br>
+
+He teaches me the value of hard work, honesty and discipline.<br><br>
+
+Whenever I face difficulties, his words motivate me to never give up.<br><br>
+
+His dedication inspires me to improve myself every single day.<br><br>
+
+My dream is to make him proud by becoming a successful Software Engineer.<br><br>
+
+Everything I achieve in life will be because of his blessings and support. ❤️
 </p>
 
 </div>
 
-<div class="card" id="skills">
+<div class="card" id="contact">
 
-<h2>Contact</h2>
+<h2>📞Contact</h2>
 
 <p>📧 akashvishwakarma4725@gmail.com</p>
 <p>📞 9305484231</p>
@@ -205,13 +256,7 @@ linkedin.com/in/YourUsername
     <p>Professional portfolio with AI intro animation and responsive design.</p>
 </div>
 
-<div class="card" id="contact">
-    <h2>📞 Contact</h2>
 
-    <p>📧 akashvishwakarma4725@gmail.com</p>
-    <p>📱 9305484231</p>
-    <p>📷 Instagram: @blaze_akashh</p>
-</div>
 
 <div class="card" id="resume">
     <h2>📄 Resume</h2>
@@ -232,14 +277,21 @@ linkedin.com/in/YourUsername
     <p>Completed C Programming Basics.</p>
 </div>
 
-<div class="card">
+<div class="card social-box">
+ 
     <h2>🌐 Social Media</h2>
 
-    <p><a href="https://github.com/">GitHub</a></p>
+    <a class="social-link" href="https://github.com/YourUsername" target="_blank">
+        💻 GitHub
+    </a>
 
-    <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+    <a class="social-link" href="https://linkedin.com/in/YourUsername" target="_blank">
+        💼 LinkedIn
+    </a>
 
-    <p><a href="https://www.instagram.com/blaze_akashh/">Instagram</a></p>
+    <a class="social-link" href="https://instagram.com/blaze._akashh" target="_blank">
+        📸 Instagram
+    </a>
 </div>
 
 </section>
